@@ -1,0 +1,33 @@
+{
+  "name": "nodeprint",
+  "version": "0.0.1",
+  "description": "An Opensource 3D Printing Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlKlein/NodePrint.git"
+  },
+  "author": "Charl Klein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharlKlein/NodePrint/issues"
+  },
+  "homepage": "https://github.com/CharlKlein/NodePrint#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.12.4",
+    "hapi": "^17.4.0",
+    "mineral-ui": "^0.29.0",
+    "mongo": "^0.1.0",
+    "mongo-models": "^2.0.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "lab": "^15.4.1"
+  }
+}
