@@ -21,7 +21,7 @@
     "glamor": "^2.20.40",
     "glamorous": "^4.12.4",
     "hapi": "^17.4.0",
-    "mineral-ui": "^0.29.0",
+    "mineral-ui": "^0.33.0",
     "mongo": "^0.1.0",
     "mongo-models": "^2.0.3",
     "react": "^16.3.2",
