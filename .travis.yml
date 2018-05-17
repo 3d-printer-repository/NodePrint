@@ -1,12 +1,16 @@
 language: node_js
+
+os: osx
+
 node_js:
   - "node"
 install:
   - npm install -g codecov
+  - npm install
 
 script:
-  - npm install
   - npm run test
+  - npm reportcoverage
   - npm run build
 
 notifications:
