@@ -27,7 +27,8 @@
     "lint:js": "npm run lint:eslint -- . ",
     "pretest": "npm run test:clean && npm run lint",
     "test:clean": "rimraf ./coverage",
-    "test": "cross-env NODE_ENV=test jest --coverage --coverageReporters=text-lcov | coveralls",
+    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test_coveralls": "cross-env NODE_ENV=test jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll"
   },
   "dependencies": {
