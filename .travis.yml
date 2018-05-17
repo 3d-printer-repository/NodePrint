@@ -5,12 +5,10 @@ os: osx
 node_js:
   - "node"
 install:
-  - npm install -g codecov
   - npm install
 
 script:
   - npm run test
-  - npm run reportcoverage
   - npm run build
 
 notifications:
