@@ -10,7 +10,7 @@ install:
 
 script:
   - npm run test
-  - npm reportcoverage
+  - npm run reportcoverage
   - npm run build
 
 notifications:
