@@ -4,6 +4,14 @@ node_js:
 install:
   - npm install -g codecov
 
+script:
+  - npm run test
+  - npm run build
+
+notifications:
+  email:
+    on_failure: change
+
 before_install:
 # package-lock.json was introduced in npm@5
 - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest' # skipped when using node 9

@@ -57,3 +57,22 @@ typings/
 # dotenv environment variables file
 .env
 
+#Coveralls
+.coveralls.yml
+
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+
+# Cruft
+.DS_Store
+npm-debug.log
+.idea
+
+# Lock file
+yarn.lock
+
+# Logs
+yarn-error.log
