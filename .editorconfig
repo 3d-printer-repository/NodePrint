@@ -12,3 +12,8 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
+
+# 4 space indentation
+[*.js]
+indent_style = space
+indent_size = 4

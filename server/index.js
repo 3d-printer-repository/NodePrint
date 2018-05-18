@@ -2,6 +2,8 @@
 
 const express = require('express');
 const logger = require('./util//logger');
+const Glue = require('glue');
+const Manifest = require('../config/manifest');
 
 const argv = require('./util/argv');
 const port = require('./util//port');
@@ -19,6 +21,24 @@ setup(app, {
   publicPath: '/',
 });
 
+
+process.on('unhandledRejection', (reason, promise) => {
+
+  console.error(`Unhandled Rejection at: ${promise} reason: ${reason}`);
+});
+
+
+const main = async function () {
+
+  const options = { relativeTo: __dirname };
+  const server = await Glue.compose(Manifest.get('/'), options);
+
+  await server.start();
+
+  console.log(`Server started on port ${Manifest.get('/server/port')}`);
+};
+
+
 // get the intended host and port number, use localhost and port 3000 if not provided
 const customHost = argv.host || process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
@@ -30,4 +50,10 @@ app.listen(port, host, (err) => {
     return logger.error(err.message);
   }
   logger.appStarted(port, prettyHost);
+
+  main();
 });
+
+
+
+

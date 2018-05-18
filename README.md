@@ -1,6 +1,5 @@
 <img src="https://raw.githubusercontent.com/CharlKlein/NodePrint/master/app/components/Header/images/banner.jpg" align="center" />
 
-<br />
 
 # NodePrint
 
@@ -13,10 +12,12 @@
 [![All The Badges](https://img.shields.io/badge/All%20The%20Badges-Collecting-brightgreen.svg)](https://img.shields.io/)
 
 
+
+
 ## Info
 
-Epic Boilerplare From Dinesh Pandiyan - [react-redux-boilerplate](https://github.com/flexdinesh/react-redux-boilerplate) 
-
+Epic React Redux Boilerplare From Dinesh Pandiyan - [react-redux-boilerplate](https://github.com/flexdinesh/react-redux-boilerplate) 
+A special thanks goes out to Reza Akhavan from [frame](https://github.com/jedireza/frame)  who created the hapi base project project with built-in registration, user management and more!
 
 ## License
 
